@@ -1,0 +1,2229 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIБЕР-КАФЕ 3 | МЕТАВСЕСВІТОМ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌌</text></svg>">
+</head>
+<body>
+    <!-- Космічні частинки -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Header з навігацією -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <span class="logo-text">CAFE NEXUS</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> ГОЛОВНА</a></li>
+                    <li><a href="#demo" class="nav-link"><i class="fas fa-play-circle"></i> ВІДЕО</a></li>
+                    <li><a href="#concept" class="nav-link"><i class="fas fa-lightbulb"></i> КОНЦЕПЦІЯ</a></li>
+                    <li><a href="#menu" class="nav-link"><i class="fas fa-coffee"></i> МЕНЮ</a></li>
+                    <li><a href="#checkout" class="nav-link"><i class="fas fa-shopping-cart"></i> КОШИК</a></li>
+                    <li><a href="#gallery" class="nav-link"><i class="fas fa-gem"></i> NFT</a></li>
+                    <li><a href="#avatars" class="nav-link"><i class="fas fa-user-astronaut"></i> АВАТАРИ</a></li>
+                    <li><a href="#bonuses" class="nav-link"><i class="fas fa-crown"></i> БОНУСИ</a></li>
+                    <li><a href="#security" class="nav-link"><i class="fa-solid fa-shield"></i> БЕЗПЕКА</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-address-book"></i> КОНТАКТИ</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <div class="user-profile" id="userProfile">
+                        <div class="profile-avatar" id="mainAvatarContainer">
+    <i class="fas fa-user-astronaut" id="mainAvatarIcon"></i>
+</div>
+                <div class="user-info">
+    <span class="user-name" id="profileName">Гість</span>
+    <span class="user-status">Online</span>
+</div>
+
+<div class="user-auth-controls">
+  <button class="btn-login" id="loginBtn" style="display:none;" onclick="openAuthModal()">
+    <i class="fas fa-sign-in-alt"></i> УВІЙТИ
+</button>
+
+    <button class="btn-login" id="logoutBtn" style="display:none; background: var(--danger-color);" onclick="logout()">
+    <i class="fas fa-sign-out-alt"></i> ВИЙТИ
+</button>
+</div>     
+                    <div class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Головний банер -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-titles">
+                <h1 class="hero-title">КІБЕР-КАФЕ 3</h1>
+                <h2 class="hero-subtitle">МЕТАВСЕСВІТОМ</h2>
+            </div>
+            <p class="hero-description">Фізичне кафе, що відкриває портал у віртуальний світ</p>
+            <div class="hero-actions">
+                <button class="btn-primary" id="discoverBtn">
+                    <i class="fas fa-arrow-right"></i> ДІЗНАТИСЯ БІЛЬШЕ
+                </button>
+                <button class="btn-secondary" id="watchVideoBtn">
+                    <i class="fas fa-play"></i> ПЕРЕГЛЯНУТИ ВІДЕО
+                </button>
+                <button class="btn-tertiary" id="viewMenuBtn">
+                    <i class="fas fa-coffee"></i> ПЕРЕГЛЯНУТИ МЕНЮ
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number" id="heroUsers">1,250</div>
+                    <div class="stat-label">Користувачів</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="heroNfts">5,432</div>
+                    <div class="stat-label">NFT</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="heroOnline">247</div>
+                    <div class="stat-label">Онлайн</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Прокрутка вниз -->
+        <div class="scroll-down">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Відео демонстрація -->
+    <section class="video-section" id="demo">
+        <div class="section-header">
+            <h2 class="section-title">ВІРТУАЛЬНИЙ ДОСВІД</h2>
+            <p class="section-subtitle">Загляньте в наш метавсесвіт та побачте, як працює КІБЕР-КАФЕ З МЕТАВСЕСВІТОМ</p>
+        </div>
+        
+        <div class="video-container">
+            <div class="video-player">
+    <div class="video-player">
+    <div class="video-wrapper">
+    <iframe 
+        src="https://www.youtube.com/embed/SEABQLwNmbs" 
+        title="Відео" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+</div>
+
+</div>
+
+            <div class="video-info">
+                <h3>ЕКСКУРСІЯ ПО МЕТАВСЕСВІТУ КІБЕР-КАФЕ</h3>
+                <p>Повне занурення у віртуальний простір нашого кафе. Відкрийте для себе унікальні локації, NFT-колекції та взаємодію з іншими користувачами.</p>
+                <div class="video-tags">
+                    <span class="tag">#метавсесвіт</span>
+                    <span class="tag">#віртуальнареальність</span>
+                    <span class="tag">#кіберкафе</span>
+                    <span class="tag">#nft</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Концепція -->
+    <section class="concept-section" id="concept">
+        <div class="section-header">
+            <h2 class="section-title">КОНЦЕПЦІЯ</h2>
+            <p class="section-subtitle">Фізичне кафе, де кожна чашка кави відкриває портал у віртуальний світ. Клієнти отримують не лише напій, а цифровий досвід, NFT-колекцію та доступ до ексклюзивного метавсевіту.</p>
+        </div>
+        
+        <div class="concept-cards">
+            <div class="concept-card">
+                <div class="card-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>ВІРТУАЛЬНИЙ СВІТ</h3>
+                <p>Занурся в ексклюзивний метавсесвіт, взаємодій з іншими клієнтами та відкривай віртуальні локації.</p>
+                <div class="card-stats">
+                    <span><i class="fas fa-users"></i> <span class="stat-value">1,250+</span> онлайн</span>
+                    <span><i class="fas fa-map-marker-alt"></i> <span class="stat-value">24</span> локації</span>
+                </div>
+                <div class="card-action">
+                    <button class="btn-card-action" data-action="virtual">
+                        <i class="fas fa-door-open"></i> Увійти
+                    </button>
+                </div>
+            </div>
+            
+            <div class="concept-card">
+                <div class="card-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <h3>NFT-КОЛЕКЦІЯ</h3>
+                <p>Збирай та обмінюйся унікальними NFT, отримуй цифрові артефакти та розширюй свою колекцію.</p>
+                <div class="card-stats">
+                    <span><i class="fas fa-coins"></i> <span class="stat-value">5,432</span> NFT</span>
+                    <span><i class="fas fa-exchange-alt"></i> <span class="stat-value">890</span> обмінів</span>
+                </div>
+                <div class="card-action">
+                    <button class="btn-card-action" data-action="nft">
+                        <i class="fas fa-shopping-bag"></i> Колекція
+                    </button>
+                </div>
+            </div>
+            
+            <div class="concept-card">
+                <div class="card-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3>ЦИФРОВІ НАГОРОДИ</h3>
+                <p>Заробляй цифрові нагороди за активність у метавсесвіті та розблоковуй ексклюзивні бонуси.</p>
+                <div class="card-stats">
+                    <span><i class="fas fa-award"></i> <span class="stat-value">890</span> нагород</span>
+                    <span><i class="fas fa-gift"></i> <span class="stat-value">150</span> бонусів</span>
+                </div>
+                <div class="card-action">
+                    <button class="btn-card-action" data-action="rewards">
+                        <i class="fas fa-gift"></i> Нагороди
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="concept-counter">
+            <div class="counter-item">
+                <div class="counter-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="counter-content">
+                    <div class="counter-number" data-target="1250">0</div>
+                    <div class="counter-label">Активних користувачів</div>
+                </div>
+            </div>
+            <div class="counter-item">
+                <div class="counter-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <div class="counter-content">
+                    <div class="counter-number" data-target="5432">0</div>
+                    <div class="counter-label">Створено NFT</div>
+                </div>
+            </div>
+            <div class="counter-item">
+                <div class="counter-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="counter-content">
+                    <div class="counter-number" data-target="890">0</div>
+                    <div class="counter-label">Видано нагород</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Меню кафе -->
+    <section class="menu-section" id="menu">
+        <div class="section-header">
+            <h2 class="section-title">МЕНЮ КАФЕ</h2>
+            <p class="section-subtitle">Справжні смаки з порталом у віртуальний світ. Кожна кава - унікальний досвід!</p>
+        </div>
+        
+        <div class="menu-filter">
+            <button class="menu-filter-btn active" data-category="all">Усе</button>
+            <button class="menu-filter-btn" data-category="coffee">Кава</button>
+            <button class="menu-filter-btn" data-category="tea">Чай</button>
+            <button class="menu-filter-btn" data-category="desserts">Десерти</button>
+            <button class="menu-filter-btn" data-category="breakfast">Сніданки</button>
+        </div>
+        
+        <div class="menu-grid">
+            <!-- Кава -->
+            <div class="menu-item coffee" data-category="coffee">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/B2BZ4xPh/photo-2026-01-13-23-28-04.jpg" alt="Кібер-Еспресо">
+        <div class="menu-item-badge">Кава</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Кібер-Еспресо</h3>
+        <p class="menu-item-description">
+             Додає енергію та допомагає прокачати концентрацію у метавсесвіті.
+        </p>
+        <ul class="menu-item-stats">
+            <li>⚡ Енергія: +10 на 1 годину</li>
+            <li>🎓 Інтелект: +1 на 1 годину</li>
+            <li>🔥 Калорії: 15 ккал</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">85₴</span>
+               <span class="menu-item-calories">15 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">+10 енергії</span>
+            <span class="menu-tag">Неонова</span>
+            <span class="menu-tag">Інтелект</span>
+        </div>
+        <button class="menu-item-order" data-item="Кібер-Еспресо" data-price="85">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+     <div class="menu-item coffee" data-category="coffee">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/hxwqdGxZ/photo-2026-01-13-23-30-50.jpg" alt="Галактичний Капучино">
+        <div class="menu-item-badge">Кава</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Галактичний Капучино</h3>
+        <p class="menu-item-description">
+             Відновлює сили та дарує бонуси у віртуальному світі, допомагаючи прокачати здоров’я і концентрацію.
+        </p>
+        <ul class="menu-item-stats">
+            <li>❤️ Зцілення: +30 HP</li>
+            <li>⚡ Енергія: +15% на 1 годину</li>
+            <li>🎓 Інтелект: +1 на 1 годину</li>
+            <li>🔥 Калорії: 120 ккал</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">120₴</span>
+                <span class="menu-item-calories">120 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">+30 HP</span>
+            <span class="menu-tag">Космічний</span>
+            <span class="menu-tag">Енергія</span>
+            <span class="menu-tag">Інтелект</span>
+        </div>
+        <button class="menu-item-order" data-item="Галактичний Капучино" data-price="120">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+            
+           <div class="menu-item coffee" data-category="coffee">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/B5zTn2Tb/photo-2026-01-13-23-34-17.jpg" alt="Матча латте зелене">
+        <div class="menu-item-badge">Кава</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Матча латте зелене</h3>
+        <p class="menu-item-description">
+             Відкриває доступ до прихованих локацій та дає енергію для досліджень.
+        </p>
+        <ul class="menu-item-stats">
+            <li>⚡ Енергія: +20% на 1 годину</li>
+            <li>🎓 Інтелект: +2 на 1 годину</li>
+            <li>🔥 Калорії: 150 ккал</li>
+            <li>🔑 Секрет: відкриває приховану локацію</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">135₴</span>
+              <span class="menu-item-calories">150 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">Секретна локація</span>
+            <span class="menu-tag">Ваніль</span>
+            <span class="menu-tag">Енергія</span>
+            <span class="menu-tag">Інтелект</span>
+        </div>
+        <button class="menu-item-order" data-item="Лате-Портал" data-price="135">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+            
+            <div class="menu-item coffee" data-category="coffee">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/QFY48Xxw/photo-2026-01-13-23-38-37.jpg" alt="Космічний мокко">
+        <div class="menu-item-badge">Кава</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Космічний мокко</h3>
+        <p class="menu-item-description">
+             Відкриває доступ до прихованих локацій та дає бонуси для енергії і концентрації.
+        </p>
+        <ul class="menu-item-stats">
+            <li>⚡ Енергія: +25% на 1 годину</li>
+            <li>🎓 Інтелект: +2 на 1 годину</li>
+            <li>🔥 Калорії: 150 ккал</li>
+            <li>🔑 Секрет: відкриває приховану локацію</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">140₴</span>
+                   <span class="menu-item-calories">150 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">Секретна локація</span>
+            <span class="menu-tag">Шоколад</span>
+            <span class="menu-tag">Енергія</span>
+            <span class="menu-tag">Інтелект</span>
+        </div>
+        <button class="menu-item-order" data-item="Космічний мокко" data-price="140">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+            <div class="menu-item coffee" data-category="coffee">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/ZRR2WtVb/photo-2026-01-13-23-39-08.jpg" alt="Американо">
+        <div class="menu-item-badge">Кава</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Американо</h3>
+        <p class="menu-item-description">
+             Відкриває доступ до прихованих локацій та дарує бонуси для енергії і настрою.
+        </p>
+        <ul class="menu-item-stats">
+            <li>⚡ Енергія: +20% на 1 годину</li>
+            <li>🎓 Інтелект: +1 на 1 годину</li>
+            <li>❤️ Зцілення: відновлює 15% здоров’я</li>
+            <li>🔥 Калорії: 180 ккал</li>
+            <li>🔑 Секрет: відкриває приховану локацію</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">140₴</span>
+              <span class="menu-item-calories">180 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">Секретна локація</span>
+            <span class="menu-tag">Какао</span>
+            <span class="menu-tag">Енергія</span>
+            <span class="menu-tag">Інтелект</span>
+            <span class="menu-tag">Зцілення</span>
+        </div>
+        <button class="menu-item-order" data-item="Космо-какао" data-price="140">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+            <!-- Чай -->
+            <div class="menu-item tea" data-category="tea">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/MxBKBLsq/photo-2026-01-13-22-30-15.jpg" alt="Зелений чай">
+        <div class="menu-item-badge">Чай</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Зелений чай</h3>
+        <p class="menu-item-description">
+            Зелений чай з жасмином – освіжаючий напій, що покращує концентрацію та увагу. 
+            Випий чашку і твій інтелект персонажа збільшиться на 1 годину, даруючи енергію та ясність думок. 
+            Ідеально підходить для навчання та стратегічних ігор!
+        </p>
+        <ul class="menu-item-stats">
+            <li>🎓 Інтелект: +2 на 1 годину</li>
+            <li>❤️ Зцілення: відновлює 8% здоров’я</li>
+            <li>⚡ Енергія: +10% на 1 годину</li>
+            <li>🔥 Калорії: 30 ккал</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">95₴</span>
+               <span class="menu-item-calories">30 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">+Інтелект</span>
+            <span class="menu-tag">Зцілення</span>
+            <span class="menu-tag">Енергія</span>
+        </div>
+        <button class="menu-item-order" data-item="Зелений чай" data-price="95">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+            
+
+
+ <div class="menu-item tea" data-category="tea">
+                <div class="menu-item-image">
+                   <img src="https://i.ibb.co/ymcNw3F6/photo-2026-01-13-22-48-39.jpg" alt="Нічний ягідний чай">
+
+                    <div class="menu-item-badge">Чай</div>
+                </div>
+                <div class="menu-item-info">
+                    <h3>Нічний ягідний чай</h3>
+                    <p class="menu-item-description"> Нічний ягідний чай – солодко-терпкий напій з лісових ягід, що заспокоює та відновлює сили після пригод. 
+            Випий чашку і твій персонаж отримає бонуси для розуму та здоров’я: </p>
+
+               <ul class="menu-item-stats">
+            <li>🎓 Інтелект: +2 на 1 годину</li>
+            <li>❤️ Зцілення: відновлює 10% здоров’я</li>
+            <li>🔥 Калорії: 50 ккал</li>
+        </ul>
+                    <div class="menu-item-details">
+                        <span class="menu-item-price">90₴</span>
+                        <span class="menu-item-calories">50 ккал</span>
+                    </div>
+                    <div class="menu-item-tags">
+                           <span class="menu-tag">+Інтелект</span>
+                           <span class="menu-tag">Зцілення</span>
+                           <span class="menu-tag">Вечірній напій</span>
+                    </div>
+                    <button class="menu-item-order" data-item="Нічний ягідний чай" data-price="90">
+                        <i class="fas fa-shopping-cart"></i> Додати в кошик
+                    </button>
+                </div>
+            </div>
+<div class="menu-item tea" data-category="tea">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/wZ29nHY8/photo-2026-01-13-23-05-35.jpg" alt="Космічно-ягідно-цитрусовий чай">
+        <div class="menu-item-badge">Чай</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Космічно-ягідно-цитрусовий чай</h3>
+        <p class="menu-item-description">
+            Космічно-ягідно-цитрусовий чай – вибух смаку з лісових ягід та цитрусових ноток, що заряджає енергією та покращує мислення. 
+            Ідеально підходить для активних ігор та довгих вечорів з квестами.
+        </p>
+        <ul class="menu-item-stats">
+            <li>🎓 Інтелект: +3 на 1 годину</li>
+            <li>⚡ Енергія: відновлює 15% витривалості персонажа</li>
+            <li>🔥 Калорії: 60 ккал</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">120₴</span>
+              <span class="menu-item-calories">60 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">+Інтелект</span>
+            <span class="menu-tag">Енергія</span>
+            <span class="menu-tag">Цитрус</span>
+        </div>
+        <button class="menu-item-order" data-item="Космічно-ягідно-цитрусовий чай" data-price="120">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+<div class="menu-item tea" data-category="tea">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/d4QcjrDb/photo-2026-01-13-23-09-11.jpg" alt="Зоряний травʼяний чай">
+        <div class="menu-item-badge">Чай</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Зоряний травʼяний чай</h3>
+        <p class="menu-item-description">
+            Зоряний трав’яний чай – спокійний та ароматний напій із суміші лугових трав і квітів, що заспокоює та допомагає відновити сили.  
+            Випий його перед ніччю, і персонаж отримає бонуси для здоров’я та розуму.
+        </p>
+        <ul class="menu-item-stats">
+            <li>❤️ Зцілення: відновлює 12% здоров’я персонажа</li>
+            <li>🎓 Інтелект: +1 на 1 годину</li>
+            <li>🔥 Калорії: 30 ккал</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">80₴</span>
+              <span class="menu-item-calories">30 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">Зцілення</span>
+            <span class="menu-tag">+Інтелект</span>
+            <span class="menu-tag">Травʼяний</span>
+        </div>
+        <button class="menu-item-order" data-item="Зоряний травʼяний чай" data-price="80">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+
+<div class="menu-item tea" data-category="tea">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/93ZB9zdL/photo-2026-01-13-23-11-53.jpg" alt="Астро-лимонний чай">
+        <div class="menu-item-badge">Чай</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Астро-лимонний чай</h3>
+        <p class="menu-item-description">
+            Астро-лимонний чай – яскравий і освіжаючий напій з нотками лимона та легких трав’яних акцентів. 
+            Він підвищує активність та концентрацію персонажа, дарує енергію для пригод і нових звершень.
+        </p>
+        <ul class="menu-item-stats">
+            <li>⚡ Енергія: +20% на 1 годину</li>
+            <li>🎓 Інтелект: +2 на 1 годину</li>
+            <li>🔥 Калорії: 45 ккал</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">100₴</span>
+            <span class="menu-item-calories">45 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">Енергія</span>
+            <span class="menu-tag">+Інтелект</span>
+            <span class="menu-tag">Цитрус</span>
+        </div>
+        <button class="menu-item-order" data-item="Астро-лимонний чай" data-price="100">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+
+<div class="menu-item tea" data-category="tea">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/pBkYbgPb/photo-2026-01-13-23-13-40.jpg" alt="Чорний чай">
+        <div class="menu-item-badge">Чай</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Чорний чай</h3>
+        <p class="menu-item-description">
+            Чорний чай – класичний та насичений напій, що підвищує бадьорість і концентрацію. 
+            Ідеальний для довгих робочих сесій або стратегічних ігор, допомагає швидко відновити сили.
+        </p>
+        <ul class="menu-item-stats">
+            <li>⚡ Енергія: +15% на 1 годину</li>
+            <li>🎓 Інтелект: +1 на 1 годину</li>
+            <li>🔥 Калорії: 5 ккал</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">70₴</span>
+               <span class="menu-item-calories">5 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">Енергія</span>
+            <span class="menu-tag">+Інтелект</span>
+            <span class="menu-tag">Класика</span>
+        </div>
+        <button class="menu-item-order" data-item="Чорний чай" data-price="70">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+
+
+            <!-- Десерти -->
+            <div class="menu-item desserts" data-category="desserts">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/pvppmzqy/photo-2026-01-09-17-22-50.jpg" alt="Ягідний хмарочос">
+        <div class="menu-item-badge">Десерт</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Ягідний хмарочос</h3>
+        <p class="menu-item-description">
+             Дає тимчасову зброю "Посох зірок" на 2 години. Ідеально для підсилення атак у метавсесвіті.
+        </p>
+        <ul class="menu-item-stats">
+            <li>🗡 Зброя: "Посох зірок" на 2 години</li>
+            <li>⭐ Рідкість: Легендарний</li>
+            <li>🔥 Калорії: 320 ккал</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">165₴</span>
+            <span class="menu-item-calories">320 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">Зброя</span>
+            <span class="menu-tag">Легендарний</span>
+        </div>
+        <button class="menu-item-order" data-item="Ягідний хмарочос" data-price="165">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+            
+            <div class="menu-item desserts" data-category="desserts">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/d0L5JFVz/photo-2026-01-09-17-22-51.jpg" alt="Астрономічний пудинг">
+        <div class="menu-item-badge">Десерт</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Астрономічний пудинг</h3>
+        <p class="menu-item-description">
+            Ніжний пудинг . Дає щит захисту на 1 годину гри, щоб легше протистояти ворогам у метавсесвіті.
+        </p>
+        <ul class="menu-item-stats">
+            <li>🛡 Захист: щит на 1 годину</li>
+            <li>✨ Рідкість: Оберіг</li>
+            <li>🔥 Калорії: 280 ккал</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">145₴</span>
+            <span class="menu-item-calories">280 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">+Захист</span>
+            <span class="menu-tag">Оберіг</span>
+        </div>
+        <button class="menu-item-order" data-item="Астрономічний пудинг" data-price="145">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+                <div class="menu-item desserts" data-category="desserts">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/23yf39z7/photo-2026-01-14-00-14-24.jpg" alt="Портал у нескінченність">
+        <div class="menu-item-badge">Десерт</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Портал у нескінченність</h3>
+        <p class="menu-item-description">
+             Дає щит захисту на 1 годину гри, щоб легше протистояти ворогам у метавсесвіті.
+        </p>
+        <ul class="menu-item-stats">
+            <li>🛡 Захист: щит на 1 годину</li>
+            <li>✨ Рідкість: Оберіг</li>
+            <li>🔥 Калорії: 340 ккал</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">145₴</span>
+            <span class="menu-item-calories">340 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">+Захист</span>
+            <span class="menu-tag">Оберіг</span>
+        </div>
+        <button class="menu-item-order" data-item="Портал у нескінченність" data-price="145">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+
+                <div class="menu-item desserts" data-category="desserts">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/sv3zm21f/photo-2026-01-14-00-08-08.jpg" alt="Космо крем-брюле">
+        <div class="menu-item-badge">Десерт</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Космо крем-брюле</h3>
+        <p class="menu-item-description">
+            Ніжний крем-брюле . Дає щит захисту на 1 годину гри, щоб легше протистояти ворогам у метавсесвіті.
+        </p>
+        <ul class="menu-item-stats">
+            <li>🛡 Захист: щит на 1 годину</li>
+            <li>✨ Рідкість: Оберіг</li>
+            <li>🔥 Калорії: 150 ккал</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">145₴</span>
+               <span class="menu-item-calories">150 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">+Захист</span>
+            <span class="menu-tag">Оберіг</span>
+        </div>
+        <button class="menu-item-order" data-item="Космо крем-брюле" data-price="145">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+            
+<div class="menu-item desserts" data-category="desserts">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/4RG0fqkV/Chat-GPT-Image-12-2026-13-47-54.png" alt="Енергія переможця">
+        <div class="menu-item-badge">Десерт</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Енергія переможця</h3>
+        <p class="menu-item-description">
+             Дає щит захисту на 1 годину гри, щоб легше протистояти ворогам у метавсесвіті.
+        </p>
+        <ul class="menu-item-stats">
+            <li>🛡 Захист: щит на 1 годину</li>
+            <li>✨ Рідкість: Оберіг</li>
+            <li>🔥 Калорії: 432 ккал</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">145₴</span>
+               <span class="menu-item-calories">432 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">+Захист</span>
+            <span class="menu-tag">Оберіг</span>
+        </div>
+        <button class="menu-item-order" data-item="Енергія переможця" data-price="145">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+            
+<div class="menu-item desserts" data-category="desserts">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/1YW1pbhZ/Chat-GPT-Image-29-2025-14-30-37.png" alt="Нічне мерехтіння">
+        <div class="menu-item-badge">Десерт</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Нічне мерехтіння</h3>
+        <p class="menu-item-description">
+             Дає щит захисту на 1 годину гри, щоб легше протистояти ворогам у метавсесвіті.
+        </p>
+        <ul class="menu-item-stats">
+            <li>🛡 Захист: щит на 1 годину</li>
+            <li>✨ Рідкість: Оберіг</li>
+            <li>🔥 Калорії: 254 ккал</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">145₴</span>
+                     <span class="menu-item-calories">254 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">+Захист</span>
+            <span class="menu-tag">Оберіг</span>
+        </div>
+        <button class="menu-item-order" data-item="Нічне мерехтіння" data-price="145">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+            
+            
+            <!-- Сніданки -->
+           <div class="menu-item breakfast" data-category="breakfast">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/pvbSKsWT/photo-2026-01-09-14-01-43.jpg" alt="Магія світанку">
+        <div class="menu-item-badge">Сніданок</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Магія світанку</h3>
+        <p class="menu-item-description">
+            Повноцінний сніданок, який заряджає енергією на весь день. Ідеально підходить для активного початку пригоди.
+        </p>
+        <ul class="menu-item-stats">
+            <li>⚡ Енергія: +50 на весь день</li>
+            <li>❤️ Зцілення: відновлює 20% здоров’я</li>
+            <li>🔥 Калорії: 450 ккал</li>
+            <li>🍳 Повноцінний сніданок</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">250₴</span>
+                     <span class="menu-item-calories">450 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">+50 енергії</span>
+            <span class="menu-tag">Повноцінний</span>
+            <span class="menu-tag">Зцілення</span>
+        </div>
+        <button class="menu-item-order" data-item="Магія світанку" data-price="250">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+            
+          <div class="menu-item breakfast" data-category="breakfast">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/FkDHwb3c/photo-2026-01-09-17-22-23.jpg" alt="Опівнічна вівсянка">
+        <div class="menu-item-badge">Сніданок</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Опівнічна вівсянка</h3>
+        <p class="menu-item-description">
+            Смачний та поживний сніданок, який дає енергію на весь день. Ідеально підходить для нічних пригод і ранкових квестів.
+        </p>
+        <ul class="menu-item-stats">
+            <li>⚡ Енергія: +50 на весь день</li>
+            <li>❤️ Зцілення: відновлює 20% здоров’я</li>
+            <li>🔥 Калорії: 400 ккал</li>
+            <li>🍳 Повноцінний сніданок</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">250₴</span>
+               <span class="menu-item-calories">400 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">+50 енергії</span>
+            <span class="menu-tag">Повноцінний</span>
+            <span class="menu-tag">Зцілення</span>
+        </div>
+        <button class="menu-item-order" data-item="Опівнічна вівсянка" data-price="250">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+            
+          <div class="menu-item breakfast" data-category="breakfast">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/9m1RnsG5/photo-2026-01-09-17-22-41.jpg" alt="Квітковий сон">
+        <div class="menu-item-badge">Сніданок</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Квітковий сон</h3>
+        <p class="menu-item-description">
+             Ідеально для нових користувачів метавсесвіту. Дає енергію та невелике зцілення, щоб легше розпочати день.
+        </p>
+        <ul class="menu-item-stats">
+            <li>⚡ Енергія: +60 на весь день</li>
+            <li>❤️ Зцілення: +15% здоров’я</li>
+            <li>🔥 Калорії: 610 ккал</li>
+            <li>🎁 Бонус: NFT для новачків</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">350₴</span>
+               <span class="menu-item-calories">610 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">Набір</span>
+            <span class="menu-tag">Бонус NFT</span>
+            <span class="menu-tag">Для новачків</span>
+            <span class="menu-tag">Енергія</span>
+            <span class="menu-tag">Зцілення</span>
+        </div>
+        <button class="menu-item-order" data-item="Квітковий сон" data-price="350">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+
+     
+
+<div class="menu-item breakfast" data-category="breakfast">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/1JTY56Rg/photo-2026-01-09-17-22-46.jpg" alt="Енергія зірок">
+        <div class="menu-item-badge">Сніданок</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Енергія зірок</h3>
+        <p class="menu-item-description">
+             Ідеально для нових користувачів метавсесвіту. Дає енергію та невелике зцілення, щоб легше розпочати день.
+        </p>
+        <ul class="menu-item-stats">
+            <li>⚡ Енергія: +60 на весь день</li>
+            <li>❤️ Зцілення: +15% здоров’я</li>
+            <li>🔥 Калорії: 410 ккал</li>
+            <li>🎁 Бонус: NFT для новачків</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">350₴</span>
+                <span class="menu-item-calories">410 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">Набір</span>
+            <span class="menu-tag">Бонус NFT</span>
+            <span class="menu-tag">Для новачків</span>
+            <span class="menu-tag">Енергія</span>
+            <span class="menu-tag">Зцілення</span>
+        </div>
+        <button class="menu-item-order" data-item="Енергія зірок" data-price="350">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+
+
+<div class="menu-item breakfast" data-category="breakfast">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/dsHsMPnY/photo-2026-01-09-17-22-48.jpg" alt="Солодке сузір'я">
+        <div class="menu-item-badge">Сніданок</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Солодке сузір'я</h3>
+        <p class="menu-item-description">
+             Ідеально для нових користувачів метавсесвіту. Дає енергію та невелике зцілення, щоб легше розпочати день.
+        </p>
+        <ul class="menu-item-stats">
+            <li>⚡ Енергія: +60 на весь день</li>
+            <li>❤️ Зцілення: +15% здоров’я</li>
+            <li>🔥 Калорії: 550 ккал</li>
+            <li>🎁 Бонус: NFT для новачків</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">350₴</span>
+             <span class="menu-item-calories">550 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">Набір</span>
+            <span class="menu-tag">Бонус NFT</span>
+            <span class="menu-tag">Для новачків</span>
+            <span class="menu-tag">Енергія</span>
+            <span class="menu-tag">Зцілення</span>
+        </div>
+        <button class="menu-item-order" data-item="Солодке сузір'я" data-price="350">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+
+
+         <div class="menu-item breakfast" data-category="breakfast">
+    <div class="menu-item-image">
+        <img src="https://i.ibb.co/JwMfMyfF/photo-2026-01-09-17-22-49.jpg" alt="Малиновий світанок">
+        <div class="menu-item-badge">Сніданок</div>
+    </div>
+    <div class="menu-item-info">
+        <h3>Малиновий світанок</h3>
+        <p class="menu-item-description">
+             Ідеально для нових користувачів метавсесвіту. Дає енергію та невелике зцілення, щоб легше розпочати день.
+        </p>
+        <ul class="menu-item-stats">
+            <li>⚡ Енергія: +60 на весь день</li>
+            <li>❤️ Зцілення: +15% здоров’я</li>
+            <li>🔥 Калорії: 680 ккал</li>
+            <li>🎁 Бонус: NFT для новачків</li>
+        </ul>
+        <div class="menu-item-details">
+            <span class="menu-item-price">350₴</span>
+                <span class="menu-item-calories">680 ккал</span>
+        </div>
+        <div class="menu-item-tags">
+            <span class="menu-tag">Набір</span>
+            <span class="menu-tag">Бонус NFT</span>
+            <span class="menu-tag">Для новачків</span>
+            <span class="menu-tag">Енергія</span>
+            <span class="menu-tag">Зцілення</span>
+        </div>
+        <button class="menu-item-order" data-item="Малиновий світанок" data-price="350">
+            <i class="fas fa-shopping-cart"></i> Додати в кошик
+        </button>
+    </div>
+</div>
+
+
+        </div>
+    </section>
+
+    <!-- Кошик та оплата -->
+    <section class="checkout-section" id="checkout">
+        <div class="section-header">
+            <h2 class="section-title">ОФОРМЛЕННЯ ЗАМОВЛЕННЯ</h2>
+            <p class="section-subtitle">Ваше замовлення та спілкування з AI-баристою</p>
+        </div>
+        
+        <div class="checkout-container">
+            <!-- Ваше замовлення -->
+            <div class="cart-section">
+                <div class="cart-header">
+                    <h3><i class="fas fa-shopping-bag"></i> Ваше замовлення</h3>
+                    <button class="btn-clear-cart" id="clearCartBtn">
+                        <i class="fas fa-trash-alt"></i> Очистити
+                    </button>
+                </div>
+                <div class="cart-items" id="cartItems">
+                    <div class="empty-cart" id="emptyCart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Кошик порожній</p>
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>Всього:</span>
+                        <span id="cartTotal">0₴</span>
+                    </div>
+                    <div class="cart-discount">
+                        <input type="text" id="discountCode" placeholder="Промокод">
+                        <button id="applyDiscountBtn">Застосувати</button>
+                    </div>
+                    <button class="btn-checkout" id="checkoutBtn">
+                        <i class="fas fa-credit-card"></i> Перейти до оплати
+                    </button>
+                </div>
+            </div>
+            
+            <!-- AI чат з баристою -->
+            <div class="ai-chat-section">
+    <div class="chat-header">
+        <div class="barista-info">
+            <div class="barista-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div>
+                <h4>AI Бариста</h4>
+                <p class="barista-status online">
+                    <i class="fas fa-circle"></i> Онлайн
+                </p>
+            </div>
+        </div>
+        <button class="btn-new-chat" id="newChatBtn">
+            <i class="fas fa-plus"></i> Новий чат
+        </button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+        <div class="message barista-message">
+            <div class="message-content">
+                <p>Привіт! Я AI-бариста Кафенексус. Можу допомогти з вибором напою, розповісти про NFT-бонуси або відповісти на будь-які питання про наш метавсесвіт! ☕🚀</p>
+            </div>
+            <div class="message-time">Зараз</div>
+        </div>
+    </div>
+
+    <!-- футер з полем вводу та швидкими відповідями -->
+    <div class="chat-footer">
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Задайте питання AI-бариcті...">
+            <button id="sendMessageBtn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+
+        <div class="quick-responses">
+            <button class="quick-response" data-question="Що рекомендуєте сьогодні?">Що рекомендуєте?</button>
+            <button class="quick-response" data-question="Які NFT можна отримати?">NFT бонуси</button>
+            <button class="quick-response" data-question="Як працює метавсесвіт?">Про метавсесвіт</button>
+        </div>
+    </div>
+</div>
+
+            
+            <!-- Форма оплати -->
+            <div class="payment-section" id="paymentSection">
+                <div class="payment-header">
+                    <h3><i class="fas fa-credit-card"></i> Оплата</h3>
+                    <div class="payment-steps">
+                        <span class="step active">1</span>
+                        <span class="step">2</span>
+                        <span class="step">3</span>
+                    </div>
+                </div>
+                
+                <div class="payment-methods">
+                    <div class="payment-method active" data-method="card">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Картка</span>
+                    </div>
+                    <div class="payment-method" data-method="crypto">
+                        <i class="fab fa-ethereum"></i>
+                        <span>Crypto</span>
+                    </div>
+                    <div class="payment-method" data-method="applepay">
+                        <i class="fab fa-apple"></i>
+                        <span>Apple Pay</span>
+                    </div>
+                    <div class="payment-method" data-method="googlepay">
+                        <i class="fab fa-google"></i>
+                        <span>Google Pay</span>
+                    </div>
+                </div>
+                
+                <form class="payment-form" id="paymentForm">
+                    <div class="form-group">
+                        <label for="cardNumber">Номер картки</label>
+                        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cardExpiry">Термін дії</label>
+                            <input type="text" id="cardExpiry" placeholder="ММ/РР" maxlength="5">
+                        </div>
+                        <div class="form-group">
+                            <label for="cardCvc">CVC</label>
+                            <input type="text" id="cardCvc" placeholder="123" maxlength="3">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cardName">Ім'я на картці</label>
+                        <input type="text" id="cardName" placeholder="IVAN IVANOV">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="saveCard">
+                            <span class="checkmark"></span>
+                            <span>Зберегти картку для наступних покупок</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn-pay">
+                        <i class="fas fa-lock"></i> Сплатити <span id="payAmount">0₴</span>
+                    </button>
+                    
+                    <p class="payment-security">
+                        <i class="fas fa-shield-alt"></i> Ваші дані захищені шифруванням
+                    </p>
+                </form>
+                
+                <div class="payment-success" id="paymentSuccess" style="display: none;">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h4>Оплата успішна!</h4>
+                    <p>Ваше замовлення #<span id="orderNumber">00123</span> прийнято</p>
+                    <p>NFT-бонус вже додано до вашого профілю</p>
+                    <button class="btn-view-order" id="viewOrderBtn">
+                        <i class="fas fa-eye"></i> Переглянути деталі
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NFT Галерея -->
+    <section class="nft-gallery-section" id="gallery">
+        <div class="section-header">
+            <h2 class="section-title">NFT КОЛЕКЦІЯ</h2>
+            <p class="section-subtitle">Унікальні цифрові артефакти, створені нашими користувачами</p>
+        </div>
+        
+        <div class="nft-filter-controls">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Всі NFT</button>
+                <button class="filter-btn" data-filter="avatar">Аватари</button>
+                <button class="filter-btn" data-filter="weapon">Зброя</button>
+                <button class="filter-btn" data-filter="artifact">Артефакти</button>
+                <button class="filter-btn" data-filter="land">Земля</button>
+            </div>
+            <div class="sort-controls">
+                <select id="nftSort">
+                    <option value="newest">Спочатку нові</option>
+                    <option value="expensive">Від дорогих</option>
+                    <option value="cheap">Від дешевих</option>
+                    <option value="rare">За рідкістю</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="nft-grid" id="nftGrid">
+            <!-- NFT 1 -->
+            <div class="nft-item" data-category="avatar" data-rarity="legendary">
+                <div class="nft-image">
+                    <!-- ВИПРАВЛЕНО: змінено шлях, замінено пробіли на підкреслення -->
+                    <img src="images/photo_2026-01-04 22.47.21.jpeg" alt="Кібер-самурай">
+                    <div class="nft-rarity legendary">Легендарний</div>
+                </div>
+                <div class="nft-info">
+                    <h4>Кібер-самурай</h4>
+                    <p class="nft-description">Ексклюзивний аватар з мечем та неоновою бронею. Обмежена серія.</p>
+                    <div class="nft-stats">
+                        <div class="nft-stat">
+                            <span class="nft-stat-label">Рідкість</span>
+                            <span class="nft-stat-value">Легендарний</span>
+                        </div>
+                        <div class="nft-stat">
+                            <span class="nft-stat-label">Власників</span>
+                            <span class="nft-stat-value">542</span>
+                        </div>
+                    </div>
+                    <div class="nft-price">
+                        <span><i class="fab fa-ethereum"></i> 1.5 ETH</span>
+                        <span class="nft-edition">#1/100</span>
+                    </div>
+                    <button class="btn-view-nft" data-nft="cyber-samurai">
+                        <i class="fas fa-eye"></i> Переглянути деталі
+                    </button>
+                </div>
+            </div>
+            
+            <!-- NFT 2 -->
+            <div class="nft-item" data-category="weapon" data-rarity="epic">
+                <div class="nft-image">
+                    <!-- ВИПРАВЛЕНО: змінено шлях, замінено пробіли на підкреслення -->
+                    <img src="images/photo_2026-01-13 19.12.38.jpeg" alt="Квантовий щит">
+                    <div class="nft-rarity epic">Епічний</div>
+                </div>
+                <div class="nft-info">
+                    <h4>Квантовий щит</h4>
+                    <p class="nft-description">Зброя з квантовим ядром. Збільшує шкоду на 150%.</p>
+                    <div class="nft-stats">
+                        <div class="nft-stat">
+                            <span class="nft-stat-label">Рідкість</span>
+                            <span class="nft-stat-value">Епічний</span>
+                        </div>
+                        <div class="nft-stat">
+                            <span class="nft-stat-label">Унікальність</span>
+                            <span class="nft-stat-value">87%</span>
+                        </div>
+                    </div>
+                    <div class="nft-price">
+                        <span><i class="fab fa-ethereum"></i> 0.8 ETH</span>
+                        <span class="nft-edition">#42/500</span>
+                    </div>
+                    <button class="btn-view-nft" data-nft="quantum-sword">
+                        <i class="fas fa-eye"></i> Переглянути деталі
+                    </button>
+                </div>
+            </div>
+            
+            <!-- NFT 3 -->
+            <div class="nft-item" data-category="artifact" data-rarity="rare">
+                <div class="nft-image">
+                    <!-- ВИПРАВЛЕНО: змінено шлях, замінено пробіли на підкреслення -->
+                    <img src="images/photo_2026-01-13 19.08.14.jpeg" alt="Кришталевий артефакт">
+                    <div class="nft-rarity rare">Рідкісний</div>
+                </div>
+                <div class="nft-info">
+                    <h4>Кришталевий артефакт</h4>
+                    <p class="nft-description">Древній артефакт з енергією метавсесвіту. Відкриває портали.</p>
+                    <div class="nft-stats">
+                        <div class="nft-stat">
+                            <span class="nft-stat-label">Рідкість</span>
+                            <span class="nft-stat-value">Рідкісний</span>
+                        </div>
+                        <div class="nft-stat">
+                            <span class="nft-stat-label">Власників</span>
+                            <span class="nft-stat-value">312</span>
+                        </div>
+                    </div>
+                    <div class="nft-price">
+                        <span><i class="fab fa-ethereum"></i> 0.5 ETH</span>
+                        <span class="nft-edition">#156/1000</span>
+                    </div>
+                    <button class="btn-view-nft" data-nft="crystal-artifact">
+                        <i class="fas fa-eye"></i> Переглянути деталі
+                    </button>
+                </div>
+            </div>
+            
+            <!-- NFT 4 -->
+            <div class="nft-item" data-category="land" data-rarity="legendary">
+                <div class="nft-image">
+                    <!-- ВИПРАВЛЕНО: змінено шлях, замінено пробіли на підкреслення -->
+                    <img src="images/photo_2026-01-04 23.55.25.jpeg" alt="Острів мрій">
+                    <div class="nft-rarity legendary">Легендарний</div>
+                </div>
+                <div class="nft-info">
+                    <h4>Острів мрій</h4>
+                    <p class="nft-description">Приватний острів у метавсесвіті з ресурсами та локаціями.</p>
+                    <div class="nft-stats">
+                        <div class="nft-stat">
+                            <span class="nft-stat-label">Рідкість</span>
+                            <span class="nft-stat-value">Легендарний</span>
+                        </div>
+                        <div class="nft-stat">
+                            <span class="nft-stat-label">Розмір</span>
+                            <span class="nft-stat-value">5x5 км</span>
+                        </div>
+                    </div>
+                    <div class="nft-price">
+                        <span><i class="fab fa-ethereum"></i> 5.2 ETH</span>
+                        <span class="nft-edition">#7/50</span>
+                    </div>
+                    <button class="btn-view-nft" data-nft="nexus-island">
+                        <i class="fas fa-eye"></i> Переглянути деталі
+                    </button>
+                </div>
+            </div>
+            
+            <!-- NFT 5 -->
+            <div class="nft-item" data-category="avatar" data-rarity="epic">
+                <div class="nft-image">
+                    <!-- ВИПРАВЛЕНО: змінено шлях, замінено пробіли на підкреслення -->
+                    <img src="images/photo_2026-01-04 22.47.23.jpeg" alt="Космічна чайка">
+                    <div class="nft-rarity epic">Епічний</div>
+                </div>
+                <div class="nft-info">
+                    <h4>Космічна чайка</h4>
+                    <p class="nft-description">Аватар з крилами та космічною енергією. Літає у метавсесвіті.</p>
+                    <div class="nft-stats">
+                        <div class="nft-stat">
+                            <span class="nft-stat-label">Рідкість</span>
+                            <span class="nft-stat-value">Епічний</span>
+                        </div>
+                        <div class="nft-stat">
+                            <span class="nft-stat-label">Власників</span>
+                            <span class="nft-stat-value">189</span>
+                        </div>
+                    </div>
+                    <div class="nft-price">
+                        <span><i class="fab fa-ethereum"></i> 0.9 ETH</span>
+                        <span class="nft-edition">#89/300</span>
+                    </div>
+                    <button class="btn-view-nft" data-nft="space-seagull">
+                        <i class="fas fa-eye"></i> Переглянути деталі
+                    </button>
+                </div>
+            </div>
+            
+
+<div class="nft-image">
+  <img src="${nft.image}">
+</div>
+
+
+            <!-- NFT 6 -->
+            <div class="nft-item" data-category="weapon" data-rarity="rare">
+                <div class="nft-image">
+                    <!-- ВИПРАВЛЕНО: змінено шлях, замінено пробіли на підкреслення -->
+                    <img src="images/photo_2026-01-04 23.55.44.jpeg" alt="Плазмовий меч">
+                    <div class="nft-rarity rare">Рідкісний</div>
+                </div>
+                <div class="nft-info">
+                    <h4>Плазмовий меч</h4>
+                    <p class="nft-description">Високотехнологічна зброя з плазмовими зарядами.</p>
+                    <div class="nft-stats">
+                        <div class="nft-stat">
+                            <span class="nft-stat-label">Рідкість</span>
+                            <span class="nft-stat-value">Рідкісний</span>
+                        </div>
+                        <div class="nft-stat">
+                            <span class="nft-stat-label">Унікальність</span>
+                            <span class="nft-stat-value">92%</span>
+                        </div>
+                    </div>
+                    <div class="nft-price">
+                        <span><i class="fab fa-ethereum"></i> 0.6 ETH</span>
+                        <span class="nft-edition">#203/800</span>
+                    </div>
+                    <button class="btn-view-nft" data-nft="plasma-blaster">
+                        <i class="fas fa-eye"></i> Переглянути деталі
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="load-more-container">
+            <button class="btn-load-more" id="loadMoreNfts">
+                <i class="fas fa-sync-alt"></i> Завантажити більше NFT
+            </button>
+        </div>
+    </section>
+
+  <!-- RFP Аватари -->
+        <section class="avatars-section" id="avatars">
+        <div class="section-header">
+            <h2 class="section-title">RFP АВАТАРИ</h2>
+            <p class="section-subtitle">Обирайте унікальні аватари для вашого віртуального втілення</p>
+        </div>
+        
+  <div class="avatar-customizer">
+  <div class="avatar-preview-area">
+    <div class="avatar-display" id="avatarDisplay">
+      <!-- SVG-render мульт-реалістичних аватарів -->
+      <div id="avatarRender" class="avatar-render" aria-label="Avatar preview"></div>
+
+      <!-- Обладнання поверх аватара -->
+      <div class="avatar-equipment" id="avatarEquipment" aria-label="Avatar equipment"></div>
+    </div>
+
+    <div class="avatar-controls">
+      <button class="btn-avatar-action" id="randomizeAvatar">
+        <i class="fas fa-random"></i> Випадковий аватар
+      </button>
+      <button class="btn-avatar-action" id="saveAvatar">
+        <i class="fas fa-save"></i> Зберегти аватар
+      </button>
+      <button class="btn-avatar-action" id="mintAvatar">
+        <i class="fas fa-gem"></i> Створити NFT
+      </button>
+    </div>
+  </div>
+
+  <div class="avatar-customization">
+                <div class="customization-tabs">
+                    <button class="custom-tab active" data-tab="head">Голова</button>
+                    <button class="custom-tab" data-tab="body">Тіло</button>
+                    <button class="custom-tab" data-tab="equipment">Обладнання</button>
+                    <button class="custom-tab" data-tab="colors">Кольори</button>
+                </div>
+                
+            <div class="customization-content">
+  <div class="tab-content active" id="tabHead">
+
+    <div class="avatar-type-grid">
+
+      <button class="avatar-type active"
+              data-option="head"
+              data-value="human">
+        <div class="mini-avatar human"></div>
+        <span>Людина</span>
+      </button>
+
+      <button class="avatar-type"
+              data-option="head"
+              data-value="robot">
+        <div class="mini-avatar robot"></div>
+        <span>Робот</span>
+      </button>
+
+      <button class="avatar-type"
+              data-option="head"
+              data-value="alien">
+        <div class="mini-avatar alien"></div>
+        <span>Прибулець</span>
+      </button>
+
+      <button class="avatar-type"
+              data-option="head"
+              data-value="animal">
+        <div class="mini-avatar animal"></div>
+        <span>Тварина</span>
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
+                    
+                    <div class="tab-content" id="tabBody">
+                        <div class="option-grid">
+                            <div class="option-item selected" data-option="body" data-value="human">
+                                <div class="option-preview human-body"></div>
+                                <span>Стандартне</span>
+                            </div>
+                            <div class="option-item" data-option="body" data-value="athletic">
+                                <div class="option-preview athletic-body"></div>
+                                <span>Атлетичне</span>
+                            </div>
+                            <div class="option-item" data-option="body" data-value="robotic">
+                                <div class="option-preview robotic-body"></div>
+                                <span>Роботичне</span>
+                            </div>
+                            <div class="option-item" data-option="body" data-value="mythical">
+                                <div class="option-preview mythical-body"></div>
+                                <span>Міфічне</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="tabEquipment">
+  <div class="equipment-slider">
+
+    <!-- ЗБРОЯ -->
+    <div class="equipment-category">
+      <h4>Зброя</h4>
+      <div class="equipment-items">
+
+        <div class="equipment-item" data-type="weapon" data-item="sword">
+          <i class="fa-solid fa-khanda"></i>
+          <span>Меч</span>
+        </div>
+
+        <div class="equipment-item" data-type="weapon" data-item="staff">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>Посох</span>
+        </div>
+
+        <div class="equipment-item" data-type="weapon" data-item="gun">
+          <i class="fa-solid fa-crosshairs"></i>
+          <span>Бластер</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- АКСЕСУАРИ -->
+    <div class="equipment-category">
+      <h4>Аксесуари</h4>
+      <div class="equipment-items">
+
+        <div class="equipment-item" data-type="accessory" data-item="helmet">
+          <i class="fa-solid fa-helmet-safety"></i>
+          <span>Шолом</span>
+        </div>
+
+        <div class="equipment-item" data-type="accessory" data-item="shield">
+          <i class="fa-solid fa-shield"></i>
+          <span>Щит</span>
+        </div>
+
+        <div class="equipment-item" data-type="accessory" data-item="wings">
+          <i class="fa-solid fa-feather"></i>
+          <span>Крила</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+                    
+                    <div class="tab-content" id="tabColors">
+                        <div class="color-picker">
+                            <h4>Колір шкіри</h4>
+                            <div class="color-options">
+                                <div class="color-option selected" style="background: #F5D0A9;" data-color="#F5D0A9"></div>
+                                <div class="color-option" style="background: #D4A574;" data-color="#D4A574"></div>
+                                <div class="color-option" style="background: #8D5524;" data-color="#8D5524"></div>
+                                <div class="color-option" style="background: #C0C0C0;" data-color="#C0C0C0"></div>
+                                <div class="color-option" style="background: #00CED1;" data-color="#00CED1"></div>
+                            </div>
+                            
+                            <h4>Колір одягу</h4>
+                            <div class="color-options">
+                                <div class="color-option" style="background: #6a11cb;" data-color="#6a11cb"></div>
+                                <div class="color-option" style="background: #2575fc;" data-color="#2575fc"></div>
+                                <div class="color-option" style="background: #FF0000;" data-color="#FF0000"></div>
+                                <div class="color-option selected" style="background: #00FF00;" data-color="#00FF00"></div>
+                                <div class="color-option" style="background: #FFFF00;" data-color="#FFFF00"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="avatar-showcase">
+            <h3><i class="fas fa-fire"></i> ПОПУЛЯРНІ АВАТАРИ</h3>
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <div class="showcase-avatar" style="background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);">
+                        <div class="avatar-badge">#1</div>
+                    </div>
+                    <div class="showcase-info">
+                        <h5>Кібер-самурай</h5>
+                        <div class="showcase-stats">
+                            <span><i class="fas fa-users"></i> 542 володарі</span>
+                            <span><i class="fab fa-ethereum"></i> 1.5 ETH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-avatar" style="background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);">
+                        <div class="avatar-badge">#2</div>
+                    </div>
+                    <div class="showcase-info">
+                        <h5>Космічна чайка</h5>
+                        <div class="showcase-stats">
+                            <span><i class="fas fa-users"></i> 312 володарів</span>
+                            <span><i class="fab fa-ethereum"></i> 0.8 ETH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-avatar" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);">
+                        <div class="avatar-badge">#3</div>
+                    </div>
+                    <div class="showcase-info">
+                        <h5>Електро-дракон</h5>
+                        <div class="showcase-stats">
+                            <span><i class="fas fa-users"></i> 189 володарів</span>
+                            <span><i class="fab fa-ethereum"></i> 2.1 ETH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-avatar" style="background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);">
+                        <div class="avatar-badge">#4</div>
+                    </div>
+                    <div class="showcase-info">
+                        <h5>Неоновий фенікс</h5>
+                        <div class="showcase-stats">
+                            <span><i class="fas fa-users"></i> 421 володар</span>
+                            <span><i class="fab fa-ethereum"></i> 1.2 ETH</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ексклюзивні бонуси -->
+    <section class="bonuses-section" id="bonuses">
+        <div class="section-header">
+            <h2 class="section-title">ЕКСКЛЮЗИВНІ БОНУСИ</h2>
+        </div>
+        
+        <div class="bonuses-content">
+            <div class="bonus-card">
+                <div class="bonus-header">
+                    <div class="bonus-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="bonus-title">
+                        <h3>РІДКІСНІ NFT</h3>
+                        <p>Отримуй рідкісні NFT за особливі досягнення</p>
+                    </div>
+                </div>
+                <div class="bonus-progress">
+                    <div class="progress-info">
+                        <span class="progress-label">Прогрес до наступного NFT</span>
+                        <span class="progress-percent" id="rareNftPercent">60%</span>
+                    </div>
+                    <div class="unlock-progress">
+                        <div class="unlock-bar" id="rareNftProgress"></div>
+                    </div>
+                    <div class="progress-stats">
+                        <span id="rareNftText">Потрібно ще 40% до рідкісного NFT</span>
+                        <span class="xp-needed">+250 XP</span>
+                    </div>
+                </div>
+                <button class="btn-bonus-action" id="claimNftBtn">
+                    <i class="fas fa-gift"></i> Отримати NFT
+                </button>
+            </div>
+            
+            <div class="bonus-card">
+                <div class="bonus-header">
+                    <div class="bonus-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="bonus-title">
+                        <h3>VIP-ПРИВІЛЕЇ</h3>
+                        <p>Забезпеч собі доступ до VIP-переваг</p>
+                    </div>
+                </div>
+                <div class="vip-status">
+                    <div class="vip-tier-display">
+                        <div class="current-tier">
+                            <span class="tier-name" id="currentTier">STANDARD</span>
+                            <span class="tier-level">Рівень 1</span>
+                        </div>
+                        <div class="next-tier">
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="tier-name" id="nextTier">GOLD</span>
+                            <span class="tier-level">Рівень 2</span>
+                        </div>
+                    </div>
+                    
+                    <div class="vip-perks">
+                        <div class="perk">
+                            <i class="fas fa-check vip-check"></i>
+                            <span>Ексклюзивні події</span>
+                        </div>
+                        <div class="perk">
+                            <i class="fas fa-check vip-check"></i>
+                            <span>Персональний консультант</span>
+                        </div>
+                        <div class="perk">
+                            <i class="fas fa-times vip-times"></i>
+                            <span>Ранній доступ до NFT</span>
+                        </div>
+                        <div class="perk">
+                            <i class="fas fa-times vip-times"></i>
+                            <span>VIP-лаунж в кафе</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-vip-upgrade" id="upgradeVipBtn">
+                    <i class="fas fa-arrow-up"></i> Покращити до GOLD
+                </button>
+            </div>
+        </div>
+        
+        <div class="bonus-quests">
+            <div class="quests-header">
+                <h3><i class="fas fa-tasks"></i> ЩОДЕННІ ЗАВДАННЯ</h3>
+                <div class="quests-timer">
+                    <i class="fas fa-clock"></i>
+                    <span id="questsTimer">23:45:12</span>
+                </div>
+            </div>
+            <div class="quests-list">
+                <div class="quest-item">
+                    <div class="quest-checkbox">
+                        <input type="checkbox" id="quest1">
+                        <label for="quest1"></label>
+                    </div>
+                    <div class="quest-info">
+                        <div class="quest-title">
+                            <h5>Випий каву в кафе</h5>
+                            <span class="quest-xp">+10 XP</span>
+                        </div>
+                        <p>Відвідай фізичне кафе та насолоджуйся ароматною кавою</p>
+                        <div class="quest-progress">
+                            <div class="quest-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quest-item">
+                    <div class="quest-checkbox">
+                        <input type="checkbox" id="quest2">
+                        <label for="quest2"></label>
+                    </div>
+                    <div class="quest-info">
+                        <div class="quest-title">
+                            <h5>Купи або продай NFT</h5>
+                            <span class="quest-xp">+25 XP</span>
+                        </div>
+                        <p>Здійсни угоду на NFT ринку</p>
+                        <div class="quest-progress">
+                            <div class="quest-bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quest-item">
+                    <div class="quest-checkbox">
+                        <input type="checkbox" id="quest3">
+                        <label for="quest3"></label>
+                    </div>
+                    <div class="quest-info">
+                        <div class="quest-title">
+                            <h5>Заверши квест у метавсесвіті</h5>
+                            <span class="quest-xp">+50 XP</span>
+                        </div>
+                        <p>Відвідай віртуальну локацію та виконай завдання</p>
+                        <div class="quest-progress">
+                            <div class="quest-bar" style="width: 30%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quests-rewards">
+                <div class="reward-info">
+                    <span>Щоденна нагорода:</span>
+                    <span class="reward-value">+85 XP</span>
+                </div>
+                <button class="btn-claim-rewards" id="claimRewardsBtn">
+                    <i class="fas fa-gift"></i> Отримати нагороду
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Безпека та інновації -->
+    <section class="security-section" id="security">
+        <div class="section-header">
+            <h2 class="section-title">БЕЗПЕКА ТА ІННОВАЦІЇ</h2>
+            <p class="section-subtitle">Ваша безпека — наш пріоритет. Ми використовуємо передові технології та блокчейн для захисту цифрових активів, конфіденційності та передачі даних.</p>
+        </div>
+        
+        <div class="security-features">
+            <div class="security-feature">
+                <div class="security-icon">
+                    <i class="fas fa-link"></i>
+                </div>
+                <div class="security-content">
+                    <h3>БЛОКЧЕЙН ТЕХНОЛОГІЇ</h3>
+                    <p>Захист транзакцій і цифрових активів за допомогою блокчейну.</p>
+                    <div class="security-status">
+                        <div class="status-indicator active"></div>
+                        <span>Активний захист</span>
+                    </div>
+                    <div class="blockchain-stats">
+                        <div class="block-stat">
+                            <span class="stat-label">Блоків:</span>
+                            <span class="stat-value" id="blockCount">1,247</span>
+                        </div>
+                        <div class="block-stat">
+                            <span class="stat-label">Транзакцій:</span>
+                            <span class="stat-value" id="txCount">12,458</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="security-feature">
+                <div class="security-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="security-content">
+                    <h3>ШИФРУВАННЯ ДАНИХ</h3>
+                    <p>Надійне шифрування даних для безпечної передачі інформації.</p>
+                    <div class="encryption-demo">
+                        <div class="encryption-input">
+                            <span>Введіть текст:</span>
+                            <div class="encryption-control">
+                                <input type="text" id="encryptInput" placeholder="Введіть текст для шифрування..." value="Hello World!">
+                                <button class="btn-random-text" id="randomTextBtn">
+                                    <i class="fas fa-random"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="encryption-process">
+                            <button class="btn-encrypt" id="encryptBtn">
+                                <i class="fas fa-lock"></i> Зашифрувати
+                            </button>
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
+                        <div class="encryption-output">
+                            <span>Результат</span>
+                            <div class="encryption-text encrypted" id="encryptedText">Зашифровано</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="security-feature">
+                <div class="security-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="security-content">
+                    <h3>ЗАХИСТ ПРИВАТНОСТІ</h3>
+                    <p>Цілковита конфіденційність і захист вашої приватної інформації.</p>
+                    <div class="privacy-controls">
+                        <div class="privacy-toggle" id="privacyToggle">
+                            <div class="toggle-labels">
+                                <span class="toggle-off">Трекінг</span>
+                                <span class="toggle-on">Приватність</span>
+                            </div>
+                            <div class="toggle-switch">
+                                <div class="toggle-knob"></div>
+                            </div>
+                        </div>
+                        <div class="privacy-status">
+                            <i class="fas fa-info-circle"></i>
+                            <span id="privacyStatusText">Трекінг активовано</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="blockchain-visual">
+            <div class="blockchain-header">
+                <h3><i class="fas fa-project-diagram"></i> БЛОКЧЕЙН ТРАНЗАКЦІЇ</h3>
+                <div class="blockchain-stats">
+                    <span>Блоків: <span id="blockchainBlocks">5</span></span>
+                    <span>Хеш: <span id="blockchainHash">#a1b2c3</span></span>
+                </div>
+            </div>
+            <div class="blocks-container" id="blocksContainer">
+                <div class="block" data-block="1">#1</div>
+                <div class="block" data-block="2">#2</div>
+                <div class="block" data-block="3">#3</div>
+                <div class="block" data-block="4">#4</div>
+                <div class="block" data-block="5">#5</div>
+                <div class="block new" id="newBlock">Новий</div>
+            </div>
+            <div class="blockchain-controls">
+                <button class="btn-add-block" id="addBlockBtn">
+                    <i class="fas fa-plus"></i> Додати блок
+                </button>
+                <button class="btn-validate-chain" id="validateChainBtn">
+                    <i class="fas fa-check"></i> Перевірити ланцюг
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакти -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="section-header">
+                    <h2 class="section-title">ЗВ'ЯЗАТИСЬ З НАМИ</h2>
+                    <p class="section-subtitle">Ми тут, щоб відповісти на всі ваші запитання.</p>
+                </div>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>АДРЕСА</h4>
+                            <p>Львів, вул. Віртуальна, 42</p>
+                            <p class="contact-hours">Пн-Нд: 10:00 – 23:00</p>
+                            <button class="btn-map" id="openMapBtn">
+                                <i class="fas fa-map"></i> Переглянути на карті
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>ТЕЛЕФОН</h4>
+                            <p>+38 098 765 4321</p>
+                            <p class="contact-hours">З 10:00 до 22:00</p>
+                            <button class="btn-call" id="callBtn">
+                                <i class="fas fa-phone-alt"></i> Зателефонувати
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>ЕЛЕКТРОННА ПОШТА</h4>
+                            <p>info@cafenexus.ua</p>
+                            <div class="contact-form">
+                                <input type="email" id="contactEmail" placeholder="Ваш email для розсилки">
+                                <button class="btn-subscribe" id="subscribeBtn">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>СОЦМЕРЕЖІ</h4>
+                            <div class="social-icons">
+                                <div class="social-icon" data-tooltip="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div class="social-icon" data-tooltip="Telegram">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <div class="social-icon" data-tooltip="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <div class="social-icon" data-tooltip="Discord">
+                                    <i class="fab fa-discord"></i>
+                                </div>
+                            </div>
+                            <div class="online-status">
+                                <div class="status-indicator online"></div>
+                                <span id="onlineCount">247</span> онлайн у метавсесвіті
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h2>ГОТОВІ ЗАНУРИТИСЬ У МЕТАВСЕСВІТ?</h2>
+                    <p>Зробіть перший крок у віртуальний світ вже сьогодні!</p>
+                    <div class="cta-actions">
+                        <button class="btn-join" id="joinBtn">
+                            <i class="fas fa-rocket"></i> ПРИЄДНАТИСЯ
+                        </button>
+                        <button class="btn-tour" id="virtualTourBtn">
+                            <i class="fas fa-vr-cardboard"></i> ВІРТУАЛЬНИЙ ТУР
+                        </button>
+                    </div>
+                    <div class="cta-stats">
+                        <div class="cta-stat">
+                            <div class="stat-number" id="joinToday">12</div>
+                            <div class="stat-label">Приєднались сьогодні</div>
+                        </div>
+                        <div class="cta-stat">
+                            <div class="stat-number" id="totalUsers">1,250</div>
+                            <div class="stat-label">Всього користувачів</div>
+                        </div>
+                        <div class="cta-stat">
+                            <div class="stat-number" id="activeNow">84</div>
+                            <div class="stat-label">Активні зараз</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <span class="logo-text">CAFE NEXUS</span>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h5>НАВІГАЦІЯ</h5>
+                        <a href="#home">ГОЛОВНА</a>
+                        <a href="#demo">ВІДЕО</a>
+                        <a href="#menu">МЕНЮ</a>
+                        <a href="#checkout">КОШИК</a>
+                    </div>
+                    <div class="link-group">
+                        <h5>КОЛЕКЦІЇ</h5>
+                        <a href="#avatars">Аватари</a>
+                        <a href="#bonuses">Бонуси</a>
+                        <a href="#security">Безпека</a>
+                        <a href="#contact">Контакти</a>
+                    </div>
+                    <div class="link-group">
+                        <h5>СОЦМЕРЕЖІ</h5>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 КІБЕР-КАФЕ 3 | МЕТАВСЕСВІТОМ. Всі права захищені.</p>
+                    <div class="footer-stats">
+                        <span><i class="fas fa-users"></i> <span id="footerOnline">247</span> онлайн</span>
+                        <span><i class="fas fa-gem"></i> <span id="footerNfts">5,432</span> NFT</span>
+                        <span><i class="fas fa-server"></i> Сервер 99.9% uptime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальні вікна -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3><i class="fas fa-sign-in-alt"></i> УВІЙТИ ДО МЕТАВСЕСВІТУ</h3>
+                <button class="modal-close" id="closeLoginModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="username"><i class="fas fa-user"></i> Ім'я користувача або Email</label>
+                    <input type="text" id="username" placeholder="Введіть ваш логін">
+                </div>
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i> Пароль</label>
+                    <input type="password" id="password" placeholder="Введіть ваш пароль">
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="rememberMe">
+                        <span class="checkmark"></span>
+                        <span>Запам'ятати мене</span>
+                    </label>
+                    <a href="#" class="forgot-password" id="forgotPasswordLink">Забули пароль?</a>
+                </div>
+                <button class="btn-primary modal-btn" id="submitLogin">
+                    <i class="fas fa-sign-in-alt"></i> УВІЙТИ
+                </button>
+                <div class="login-divider">
+                    <span>Або увійдіть через</span>
+                </div>
+                <div class="social-login">
+                    <button class="social-btn google-btn" id="googleLoginBtn">
+                        <i class="fab fa-google"></i> Google
+                    </button>
+                    <button class="social-btn metamask-btn" id="metamaskLoginBtn">
+                        <i class="fab fa-ethereum"></i> MetaMask
+                    </button>
+                </div>
+                <p class="modal-text">Ще не маєте акаунту? <a href="#" id="registerLink">Зареєструватися</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="joinModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3><i class="fas fa-user-plus"></i> ПРИЄДНАТИСЯ ДО МЕТАВСЕСВІТУ</h3>
+                <button class="modal-close" id="closeJoinModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="joinEmail"><i class="fas fa-envelope"></i> Електронна пошта</label>
+                    <input type="email" id="joinEmail" placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="joinUsername"><i class="fas fa-user"></i> Ім'я користувача</label>
+                    <input type="text" id="joinUsername" placeholder="Оберіть унікальне ім'я">
+                    <div class="username-availability" id="usernameAvailability">
+                        <i class="fas fa-info-circle"></i> Перевірка доступності...
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="joinPassword"><i class="fas fa-lock"></i> Пароль</label>
+                    <input type="password" id="joinPassword" placeholder="Створіть надійний пароль">
+                    <div class="password-strength" id="passwordStrength">
+                        <div class="strength-bar"></div>
+                        <div class="strength-labels">
+                            <span class="strength-text">Сила пароля:</span>
+                            <span class="strength-value">Слабкий</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="termsAgree">
+                        <span class="checkmark"></span>
+                        <span>Я погоджуюсь з <a href="#" class="terms-link">умовами використання</a> та <a href="#" class="privacy-link">політикою конфіденційності</a></span>
+                    </label>
+                </div>
+                <button class="btn-primary modal-btn" id="submitJoin">
+                    <i class="fas fa-user-plus"></i> СТВОРИТИ АКАУНТ
+                </button>
+                <p class="modal-text">Вже маєте акаунт? <a href="#" id="loginLink">Увійти</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="mapModal">
+        <div class="modal map-modal">
+            <div class="modal-header">
+                <h3><i class="fas fa-map-marked-alt"></i> НАША ЛОКАЦІЯ</h3>
+                <button class="modal-close" id="closeMapModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="map-placeholder">
+                    <div class="map-marker">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                </div>
+                <div class="map-details">
+                    <div class="map-address">
+                        <i class="fas fa-map-pin"></i>
+                        <div>
+                            <h4>АДРЕСА</h4>
+                            <p>Львів, вул. Віртуальна, 42</p>
+                        </div>
+                    </div>
+                    <button class="btn-get-directions" id="getDirectionsBtn">
+                        <i class="fas fa-route"></i> Прокласти маршрут
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NFT детальний перегляд -->
+    <div class="modal-overlay" id="nftDetailModal">
+        <div class="modal nft-modal">
+            <div class="modal-header">
+                <h3><i class="fas fa-gem"></i> NFT ДЕТАЛІ</h3>
+                <button class="modal-close" id="closeNftModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="nft-detail-container" id="nftDetailContainer">
+                    <!-- Буде заповнено через JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Сповіщення -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+<!-- Updated single-file style patch. Paste this <style> block before </head> in your existing file -->
+
+
+    <script>
+async function sendToPython(name, price) {
+    // Якщо юзер увійшов, беремо його ID, інакше 0 (гість)
+    const userId = STATE.user ? STATE.user.id : 0; 
+
+    await fetch('http://127.0.0.1:8000/api/order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+            item: name, 
+            price: parseInt(price),
+            user_id: userId // Передаємо ID
+        })
+    });
+}
+
+// Додаємо прослуховування всіх кнопок "Додати"
+document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('menu-item-order') || e.target.closest('.menu-item-order')) {
+        const btn = e.target.classList.contains('menu-item-order') ? e.target : e.target.closest('.menu-item-order');
+        const name = btn.getAttribute('data-item');
+        const price = btn.getAttribute('data-price');
+        sendToPython(name, price);
+    }
+});
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
